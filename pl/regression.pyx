@@ -38,7 +38,7 @@ def sampler(features,
         - repl is an integer of the desired number of mcmc samples
         - burn is an integer representing the number of samples in the burn-in phase
         - old trace(optional) is an array of MCMC samples from a previous sampler
-    """                                
+    """
     cdef:
         gsl_rng *r = gsl_rng_alloc(gsl_rng_mt19937)
         Py_ssize_t i,ii,iii,j,p,rep
